@@ -1,0 +1,130 @@
+<!--indica al navegador que el documento es html:5-->
+<!DOCTYPE html>
+<html lang="es"> <!--  indica al navegador el idioma del sitio del documento-->
+<head>
+	<!--cabecera del sitio-->
+	<meta charset="UTF-8">
+	<!--titulo de la pagina-->
+	<title>Taller 3 Formulario de contácto</title>
+
+	<!-- se incluye bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- se incluye los iconos de font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- uikit -->
+	<link rel="stylesheet" href="css/uikit.almost-flat.min.css" media="all">
+
+	<!-- flag icons -->
+	<link rel="stylesheet" href="css/flags.min.css" media="all">
+
+	<!-- altair admin -->
+	<link rel="stylesheet" href="css/main.min.css" media="all">
+</head>
+<body><!--cuerpo de documento-->
+	<div class="uk-grid" >
+		<div class="uk-width-medium-1-10"></div><!-- div vacio para dar centro al proximo div -->
+		<div class="uk-width-medium-8-10"><!-- inicio div que contiene la carta -->
+			<div class="md-card">
+				<div class="login_heading" align="center">
+					<h1 ><!-- titulo de la carta -->
+						Formulario de contácto
+					</h1><!-- fin titulo -->
+					<br>
+				</div>
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-10"></div>
+						<div class="uk-width-medium-8-10">
+							<form id="form_login">
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<label for="nombre">Nombre</label>
+										<input class="md-input" type="text" id="" required=""   name="nombre" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<label for="apellidos">Apellidos</label>
+										<input class="md-input" type="text" id="" required=""   name="apellidos" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<label for="telefono">Teléfono</label>
+										<input class="md-input" type="tel" min="10" max="10" id="" required=""   name="telefono" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<label for="email">E-mail</label>
+										<input class="md-input" type="email" id=""  required=""  name="email" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<label for="num_doc">Mensaje</label>
+										<textarea cols="30" rows="6" class="md-input" name="nota"></textarea>
+									</div>
+								</div>
+								<div class="uk-grid"></div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1">
+										<input name="archivo" type="file" class="md-input ">
+									</div>
+								</div>
+								<div class="uk-grid"></div>
+									
+								<div class="uk-grid">
+									<div class="uk-width-medium-1" align="center">
+										<input type="submit" class="md-btn md-btn-primary" name="boton_enviar" value="Enviar Mensaje"/>
+										<input type="reset" class="md-btn md-btn-warning" name="boton_borrar" value="Borrar Datos"/>
+									</div>
+								</div>
+								<br>
+								<br>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+		</div>
+	<footer>
+		<div class="uk-grid"><br></div>
+		<div class="uk-grid">
+			<div class="uk-width-medium-2-10"></div>
+			<div class="uk-width-medium-6-10">
+				<br>
+				<div class="uk-grid" >
+					<h3>Otros formularios del taller</h3>
+				</div>
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_login.html">Formulario de Inicio de Sesión</a></button>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_options.html">Formulario de Opciones</a></button>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_registro.html">Formulario de Registro</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</div><!-- fin contenedor de carta -->
+
+</body>
+</html>
+<!-- Jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- common functions -->
+<script src="js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="js/altair_admin_common.min.js"></script>

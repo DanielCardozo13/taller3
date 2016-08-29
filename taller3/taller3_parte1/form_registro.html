@@ -1,0 +1,185 @@
+<!--indica al navegador que el documento es html:5-->
+<!DOCTYPE html>
+<html lang="es"> <!--  indica al navegador el idioma del sitio del documento-->
+<head>
+	<!--cabecera del sitio-->
+	<meta charset="UTF-8">
+	<!--titulo de la pagina-->
+	<title>Taller 3 Formulario de registro</title>
+
+	<!-- se incluye bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- se incluye los iconos de font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- uikit -->
+	<link rel="stylesheet" href="css/uikit.almost-flat.min.css" media="all">
+
+	<!-- flag icons -->
+	<link rel="stylesheet" href="css/flags.min.css" media="all">
+
+	<!-- altair admin -->
+	<link rel="stylesheet" href="css/main.min.css" media="all">
+</head>
+<body><!--cuerpo de documento-->
+	<div class="uk-grid" >
+		<div class="uk-width-medium-1-10"></div><!-- div vacio para dar centro al proximo div -->
+		<div class="uk-width-medium-8-10"><!-- inicio div que contiene la carta -->
+			<div class="md-card">
+				<div class="login_heading" align="center">
+					<h1 ><!-- titulo de la carta -->
+						Formulario de inicio de sesión
+					</h1><!-- fin titulo -->
+					<br>
+				</div>
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-10"></div>
+						<div class="uk-width-medium-8-10">
+							<form id="form_login">
+								<div class="uk-grid">
+									<div class="uk-width-medium-2-10" >
+										<select id="doc_identidad" data-md-selectize>
+		                    				<option value="">Documento</option>
+		                    				<option value="CC">CC</option>
+		                    				<option value="TI">TI</option>
+		                    				<option value="CI">CI</option>
+		                				</select>
+									</div>
+									<div class="uk-width-medium-3-10">
+										<label for="num_doc">No. Documento</label>
+										<input class="md-input" type="text" id=""   name="num_doc" />
+									</div>
+									<div class="uk-width-medium-5-10">
+										<label for="lugar_exp">Lugar de expedición *</label>
+										<input class="md-input" type="text" required="" id="" name="lugar_exp" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1-2">
+										<label for="primer_nom">Primer Nombre *</label>
+										<input class="md-input" type="text" required="" id="" name="primer_nom" />
+									</div>
+									<div class="uk-width-medium-1-2">
+										<label for="segundo_nom">Segundo Nombre</label>
+										<input class="md-input" type="text"  id="" name="segundo_nom" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1-2">
+										<label for="primer_apellido">Primer Apellido *</label>
+										<input class="md-input" type="text" required="" id="" name="primer_apellido" />
+									</div>
+									<div class="uk-width-medium-1-2">
+										<label for="segundo_apellido">Segundo Apellido *</label>
+										<input class="md-input" type="text" required="" id="" name="segundo_apellido" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1-10">
+										<label for="dia">Día</label>
+										<input class="md-input" type="number" id=""   name="dia" />
+									</div>
+									<div class="uk-width-medium-3-10">
+										<select id="mes" data-md-selectize>
+		                    				<option value="">Mes</option>
+		                    				<option value="Enero">Enero</option>
+		                    				<option value="Febrero">Febrero</option>
+		                    				<option value="Marzo">Marzo</option>
+		                    				<option value="Abril">Abril</option>
+		                    				<option value="Mayo">Mayo</option>
+		                    				<option value="Junio">Junio</option>
+		                    				<option value="julio">julio</option>
+		                    				<option value="Agosto">Agosto</option>
+		                    				<option value="Septiembre">Septiembre</option>
+		                    				<option value="Octubre">Octubre</option>
+		                    				<option value="Noviembre">Noviembre</option>
+		                    				<option value="Diciembre">Diciembre</option>
+		                				</select>
+									</div>
+									<div class="uk-width-medium-1-10">
+										<label for="dia">Año</label>
+										<input class="md-input" type="number" id=""   name="dia" />
+									</div>
+									<div class="uk-width-medium-5-10">
+										<label for="lugar_nac">Lugar de Nacimiento *</label>
+										<input class="md-input" type="text" required="" id="" name="lugar_nac" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-1-2">
+										<label for="num_movil">Número móvil *</label>
+										<input class="md-input" type="tel" required="" id="" name="num_movil" />
+									</div>
+									<div class="uk-width-medium-1-2">
+										<label for="email">Correo Electronico  *</label>
+										<input class="md-input" type="email" required="" id="" name="email" />
+									</div>
+								</div>
+								<div class="uk-grid">
+									<div class="uk-width-medium-5-10">
+										<label for="direccion">Dirección *</label>
+										<input class="md-input" type="text" required="" id="" name="direccion" />
+									</div>
+									<div class="uk-width-medium-3-10">
+										<label for="clave1">Clave (min 4 - max 6) *</label>
+										<input min="4" max="6" class="md-input" type="text" required="" id="" name="clave1" />
+									</div>
+									<div class="uk-width-medium-2-10">
+										<label for="clave2">Repitá Clave*</label>
+										<input min="4" max="6" class="md-input" type="text" required="" id="" name="clave2" />
+									</div>
+								</div>	
+								<div class="uk-grid">
+									<br>
+									<br>
+									<input type="submit" class="md-btn md-btn-success" name="boton_enviar" value="Registrame"/>
+									<input type="reset" class="md-btn md-btn-danger" name="boton_borrar" value="Cancelar"/>
+								</div>
+								<br>
+								<br>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+		</div>
+	<footer>
+		<div class="uk-grid"><br></div>
+		<div class="uk-grid">
+			<div class="uk-width-medium-2-10"></div>
+			<div class="uk-width-medium-6-10">
+				<br>
+				<div class="uk-grid" >
+					<h3>Otros formularios del taller</h3>
+				</div>
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_login.html">Formulario de Inicio de Sesión</a></button>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_options.html">Formulario de Opciones</a></button>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<button><a href="form_contacto.html">Formulario de Contacto</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</div><!-- fin contenedor de carta -->
+
+</body>
+</html>
+<!-- Jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- common functions -->
+<script src="js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="js/altair_admin_common.min.js"></script>

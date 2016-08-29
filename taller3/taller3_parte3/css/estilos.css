@@ -1,0 +1,74 @@
+
+	header{
+		background-color   : #B10320 ;
+		background-position: top;
+		text-align         : center;
+		height             : auto;
+		margin-left        : 10px;
+		margin-right       : 10px;
+		margin-top         : 20px;
+		padding            : 5px;
+		border-width       : 10px;
+	}
+
+	body{
+		background-color   : #F7DDB4;
+	}
+
+	.titulo { 
+		color              : #06860F;
+		font-family        : impact;
+		font-size          : 35px;
+		text-shadow        : -3px -3px 3px #070000, 3px -3px 3px #070000, -3px 3px 3px #070000, 3px 3px 3px #070000;
+	}
+
+	.cursiva_blanca{
+		color              : #FFFFFF;
+		text-decoration    : underline;
+		font-style         : oblique;
+	}
+
+	
+
+	img{
+		width              : 130px;
+		height             : 90px;
+		background-position: left;
+	}
+
+
+	nav{
+		background-color   : #0E08F7 ;
+		text-align         : left;
+		height             : auto;
+		margin-right       : 10px;
+		margin-left        : 10px;
+		margin-top         : 20px;
+
+	}
+
+	p{
+		height             : auto;
+		background-color   : #F5F805;
+
+	}
+	
+	article{
+		color              : #F80606;
+		height             : auto;
+		margin-right       : 20px;
+		margin-left        : 10px;
+		margin-right       : 10px;
+		margin-top         : 20px;
+	}
+
+
+	footer{
+		text-align         : left;
+		color              : green;
+		background-position: bottom;
+		height             : auto;
+		margin-right       : 20px;
+		margin-top         : 20px;
+		margin-left        : 10px;
+	}

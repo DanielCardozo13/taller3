@@ -1,0 +1,36 @@
+.encabezado {
+	background-image: url("../imagenes/fruteria1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+.encabezado h1{
+	color: #000;
+ 
+    text-shadow: 
+   -4px -1px 0 #fff,
+    1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  
+}
+
+footer{
+	background-color: #018C00 ;
+	height: 130px;
+
+}
+
+.carousel-caption{
+	font-weight: bold;
+}
+
+.bootstrap-demo{
+margin: auto;
+}
+
+.thumbnail{
+	margin-top: 20px;
+}
+
